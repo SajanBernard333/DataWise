@@ -1,0 +1,134 @@
+2026-10-03T11:15:51.514Z	Initializing build environment...
+2026-10-03T11:15:57.575Z	Success: Finished initializing build environment
+2026-10-03T11:15:58.127Z	Cloning seed repository...
+2026-10-03T11:15:58.138Z	Cloning from: https://github.com/cloudflare/templates.git
+2026-10-03T11:15:59.580Z	Overwriting files
+2026-10-03T11:15:59.917Z	Pushing to destination: https://github.com/SajanBernard333/workflows-starter-template.git
+2026-10-03T11:16:01.595Z	Detected the following tools from environment: npm@10.9.2, nodejs@24.18.0, bun@1.2.15
+2026-10-03T11:16:01.596Z	Installing project dependencies: bun install --frozen-lockfile
+2026-10-03T11:16:01.892Z	bun install v1.2.15 (df017990)
+2026-10-03T11:16:01.903Z	[7.07ms] migrated lockfile from package-lock.json
+2026-10-03T11:16:06.468Z	Saved lockfile
+2026-10-03T11:16:06.469Z	
+2026-10-03T11:16:06.469Z	+ react@19.2.1
+2026-10-03T11:16:06.469Z	+ react-dom@19.2.1
+2026-10-03T11:16:06.469Z	+ @cloudflare/vite-plugin@1.52.1
+2026-10-03T11:16:06.469Z	+ @cloudflare/vitest-pool-workers@0.21.3
+2026-10-03T11:16:06.469Z	+ @eslint/js@9.39.1
+2026-10-03T11:16:06.469Z	+ @tailwindcss/vite@4.1.17
+2026-10-03T11:16:06.469Z	+ @types/react@19.2.7
+2026-10-03T11:16:06.469Z	+ @types/react-dom@19.2.3
+2026-10-03T11:16:06.469Z	+ @vitejs/plugin-react-swc@4.0.0
+2026-10-03T11:16:06.470Z	+ @vitest/runner@4.1.10
+2026-10-03T11:16:06.470Z	+ @vitest/snapshot@4.1.10
+2026-10-03T11:16:06.470Z	+ eslint@9.39.2
+2026-10-03T11:16:06.470Z	+ eslint-plugin-react-hooks@7.0.1
+2026-10-03T11:16:06.470Z	+ eslint-plugin-react-refresh@0.4.24
+2026-10-03T11:16:06.470Z	+ globals@16.5.0
+2026-10-03T11:16:06.472Z	+ tailwindcss@4.1.17
+2026-10-03T11:16:06.472Z	+ typescript@5.9.3
+2026-10-03T11:16:06.472Z	+ typescript-eslint@8.48.0
+2026-10-03T11:16:06.472Z	+ vite@7.3.6
+2026-10-03T11:16:06.472Z	+ vitest@4.1.10
+2026-10-03T11:16:06.472Z	+ wrangler@4.136.1
+2026-10-03T11:16:06.472Z	
+2026-10-03T11:16:06.472Z	261 packages installed [4.60s]
+2026-10-03T11:16:06.472Z	
+2026-10-03T11:16:06.472Z	Blocked 1 postinstall. Run `bun pm untrusted` for details.
+2026-10-03T11:16:06.688Z	Executing user build command: npm run build
+2026-10-03T11:16:06.944Z	
+2026-10-03T11:16:06.944Z	> build
+2026-10-03T11:16:06.944Z	> tsc -b && vite build
+2026-10-03T11:16:06.944Z	
+2026-10-03T11:16:10.419Z	vite v7.3.6 building workflows_starter_template environment for production...
+2026-10-03T11:16:10.460Z	transforming...
+2026-10-03T11:16:10.512Z	"WorkflowStep" is imported from external module "cloudflare:workers" but never used in "worker/workflow.ts".
+2026-10-03T11:16:10.512Z	✓ 5 modules transformed.
+2026-10-03T11:16:10.530Z	rendering chunks...
+2026-10-03T11:16:10.538Z	dist/workflows_starter_template/.vite/manifest.json  0.16 kB
+2026-10-03T11:16:10.538Z	dist/workflows_starter_template/wrangler.json        1.53 kB
+2026-10-03T11:16:10.538Z	dist/workflows_starter_template/index.js             7.44 kB
+2026-10-03T11:16:10.538Z	✓ built in 92ms
+2026-10-03T11:16:10.539Z	vite v7.3.6 building client environment for production...
+2026-10-03T11:16:10.562Z	transforming...
+2026-10-03T11:16:11.433Z	✓ 34 modules transformed.
+2026-10-03T11:16:11.784Z	rendering chunks...
+2026-10-03T11:16:11.821Z	computing gzip size...
+2026-10-03T11:16:11.837Z	dist/client/.assetsignore                0.02 kB
+2026-10-03T11:16:11.837Z	dist/client/index.html                   1.42 kB │ gzip:  0.87 kB
+2026-10-03T11:16:11.856Z	dist/client/assets/index-BQJqtvht.css   26.89 kB │ gzip:  5.37 kB
+2026-10-03T11:16:11.856Z	dist/client/assets/index-DwvphxeI.js   207.54 kB │ gzip: 65.52 kB
+2026-10-03T11:16:11.856Z	✓ built in 1.30s
+2026-10-03T11:16:12.787Z	Success: Build command completed
+2026-10-03T11:16:14.253Z	Executing user deploy command: npm run deploy
+2026-10-03T11:16:14.454Z	
+2026-10-03T11:16:14.454Z	> deploy
+2026-10-03T11:16:14.455Z	> npm run build && wrangler deploy
+2026-10-03T11:16:14.455Z	
+2026-10-03T11:16:14.598Z	
+2026-10-03T11:16:14.598Z	> build
+2026-10-03T11:16:14.598Z	> tsc -b && vite build
+2026-10-03T11:16:14.598Z	
+2026-10-03T11:16:17.458Z	vite v7.3.6 building workflows_starter_template environment for production...
+2026-10-03T11:16:17.486Z	transforming...
+2026-10-03T11:16:17.528Z	"WorkflowStep" is imported from external module "cloudflare:workers" but never used in "worker/workflow.ts".
+2026-10-03T11:16:17.528Z	✓ 5 modules transformed.
+2026-10-03T11:16:17.547Z	rendering chunks...
+2026-10-03T11:16:17.553Z	dist/workflows_starter_template/.vite/manifest.json  0.16 kB
+2026-10-03T11:16:17.553Z	dist/workflows_starter_template/wrangler.json        1.53 kB
+2026-10-03T11:16:17.554Z	dist/workflows_starter_template/index.js             7.44 kB
+2026-10-03T11:16:17.554Z	✓ built in 79ms
+2026-10-03T11:16:17.554Z	vite v7.3.6 building client environment for production...
+2026-10-03T11:16:17.577Z	transforming...
+2026-10-03T11:16:18.353Z	✓ 34 modules transformed.
+2026-10-03T11:16:18.480Z	rendering chunks...
+2026-10-03T11:16:18.487Z	computing gzip size...
+2026-10-03T11:16:18.499Z	dist/client/.assetsignore                0.02 kB
+2026-10-03T11:16:18.500Z	dist/client/index.html                   1.42 kB │ gzip:  0.87 kB
+2026-10-03T11:16:18.500Z	dist/client/assets/index-BQJqtvht.css   26.89 kB │ gzip:  5.37 kB
+2026-10-03T11:16:18.500Z	dist/client/assets/index-DwvphxeI.js   207.54 kB │ gzip: 65.52 kB
+2026-10-03T11:16:18.500Z	✓ built in 944ms
+2026-10-03T11:16:19.409Z	
+2026-10-03T11:16:19.409Z	 ⛅️ wrangler 4.136.1
+2026-10-03T11:16:19.409Z	────────────────────
+2026-10-03T11:16:19.411Z	Using redirected Wrangler configuration.
+2026-10-03T11:16:19.411Z	 - Configuration being used: "dist/workflows_starter_template/wrangler.json"
+2026-10-03T11:16:19.411Z	 - Original user's configuration: "wrangler.jsonc"
+2026-10-03T11:16:19.411Z	 - Deploy configuration file: ".wrangler/deploy/config.json"
+2026-10-03T11:16:20.770Z	🌀 Building list of assets...
+2026-10-03T11:16:20.771Z	✨ Read 5 files from the assets directory /opt/buildhome/repo/dist/client
+2026-10-03T11:16:20.780Z	🌀 Starting asset upload...
+2026-10-03T11:16:22.326Z	🌀 Found 3 new or modified static assets to upload. Proceeding with upload...
+2026-10-03T11:16:22.328Z	+ /index.html
+2026-10-03T11:16:22.328Z	+ /assets/index-BQJqtvht.css
+2026-10-03T11:16:22.328Z	+ /assets/index-DwvphxeI.js
+2026-10-03T11:16:22.874Z	Uploaded 1 of 3 assets
+2026-10-03T11:16:23.118Z	Uploaded 2 of 3 assets
+2026-10-03T11:16:23.460Z	Uploaded 3 of 3 assets
+2026-10-03T11:16:23.460Z	✨ Success! Uploaded 3 files (1.13 sec)
+2026-10-03T11:16:23.460Z	
+2026-10-03T11:16:23.477Z	Total Upload: 7.26 KiB / gzip: 1.96 KiB
+2026-10-03T11:16:24.047Z	Your Worker has access to the following bindings:
+2026-10-03T11:16:24.047Z	Binding                                     Resource            
+2026-10-03T11:16:24.048Z	env.WORKFLOW_STATUS (WorkflowStatusDO)      Durable Object      
+2026-10-03T11:16:24.048Z	env.MY_WORKFLOW (MyWorkflow)                Workflow            
+2026-10-03T11:16:24.048Z	
+2026-10-03T11:16:24.048Z	Uploaded workflows-starter-template (3.51 sec)
+2026-10-03T11:16:24.452Z	▲ [WARNING] Because 'workers_dev' is not in your Wrangler file, it will be enabled for this deployment by default.
+2026-10-03T11:16:24.452Z	
+2026-10-03T11:16:24.452Z	  To override this setting, you can disable workers.dev by explicitly setting 'workers_dev = false' in your Wrangler file.
+2026-10-03T11:16:24.452Z	
+2026-10-03T11:16:24.452Z	
+2026-10-03T11:16:24.454Z	▲ [WARNING] Because your 'workers.dev' route is enabled and your 'preview_urls' setting is not in your Wrangler file, Preview URLs will be enabled for this deployment by default.
+2026-10-03T11:16:24.454Z	
+2026-10-03T11:16:24.455Z	  To override this setting, you can disable Preview URLs by explicitly setting 'preview_urls = false' in your Wrangler file.
+2026-10-03T11:16:24.455Z	
+2026-10-03T11:16:24.455Z	
+2026-10-03T11:16:25.291Z	Deployed workflows-starter-template triggers (1.24 sec)
+2026-10-03T11:16:25.291Z	  https://workflows-starter-template.wfdevg.workers.dev
+2026-10-03T11:16:25.291Z	  workflow: my-workflow
+2026-10-03T11:16:25.291Z	Current Version ID: 677121b1-0111-4d5e-aad5-1a6e3a881e46
+2026-10-03T11:16:25.293Z	
+2026-10-03T11:16:25.293Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-10-03T11:16:25.358Z	Success: Deploy command completed
+2026-10-03T11:16:25.529Z	✨ Success! Build completed.

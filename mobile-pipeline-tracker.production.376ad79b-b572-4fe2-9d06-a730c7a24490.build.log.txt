@@ -1,0 +1,19 @@
+2026-10-03T10:49:55.309Z	Initializing build environment...
+2026-10-03T10:49:57.030Z	Success: Finished initializing build environment
+2026-10-03T10:49:57.697Z	Cloning repository...
+2026-10-03T10:50:02.839Z	No build output detected to cache. Skipping.
+2026-10-03T10:50:02.839Z	No dependencies detected to cache. Skipping.
+2026-10-03T10:50:02.840Z	Detected the following tools from environment: 
+2026-10-03T10:50:03.048Z	Executing user deploy command: npx wrangler deploy
+2026-10-03T10:50:04.370Z	npm warn exec The following package was not found and will be installed: wrangler@4.147.0
+2026-10-03T10:50:11.713Z	
+2026-10-03T10:50:11.713Z	 ⛅️ wrangler 4.147.0
+2026-10-03T10:50:11.713Z	────────────────────
+2026-10-03T10:50:11.805Z	
+2026-10-03T10:50:11.805Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-10-03T10:50:11.805Z	
+2026-10-03T10:50:11.873Z	✘ [ERROR] Could not detect a directory containing static files (e.g. html, css and js) for the project
+2026-10-03T10:50:11.874Z	
+2026-10-03T10:50:11.874Z	
+2026-10-03T10:50:11.892Z	🪵  Logs were written to "/opt/buildhome/.config/.wrangler/logs/wrangler-2026-10-03_10-50-11_373.log"
+2026-10-03T10:50:11.968Z	Failed: error occurred while running deploy command
